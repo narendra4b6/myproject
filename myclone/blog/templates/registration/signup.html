@@ -1,0 +1,14 @@
+{% extends 'blog/base.html' %}
+{% load bootstrap4 %}
+{% block content %}
+<div class="jumbotron">
+<div class="container">
+<h1>Signup here</h1>
+<form method="POST">
+{% csrf_token %}
+{% bootstrap_form form %}
+<input type="submit" value="Signup" class="btn btn-success">
+</form>
+</div>
+</div>
+{% endblock %}

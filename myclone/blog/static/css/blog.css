@@ -1,0 +1,33 @@
+body{
+  padding:0;
+  margin:0;
+  font-family:sans-serif,verdana;
+}
+h1{
+  color:orange;
+  margin-top:25px;
+}
+
+.techfont{
+  background-color:silver;
+  padding:20px;
+}
+
+.menu{
+padding:7px;
+}
+.menu a{
+  margin-right:30px;
+  text-decoration:none;
+  padding:3px;
+  color:green;
+
+
+}
+
+.menu2 a{
+  margin-right:30px;
+  text-decoration:none;
+  padding:3px;
+  color:green;
+}

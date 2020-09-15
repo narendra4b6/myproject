@@ -1,0 +1,18 @@
+{% extends "blog/base.html" %}
+{% load  bootstrap4 %}
+{% block content %}
+<div class="jumbotron">
+<h2>Please Login </h2>
+<form method="POST" action="{% url 'login' %}">
+{% csrf_token %}
+{% bootstrap_form form %}
+<input type="submit" value="Login" class="btn btn-primary">
+<input type="hidden" name="next"  next="{{next}}">
+</form>
+<p>Not Registered yet please <a href="{% url 'signup' %}">Signup</a></p>
+{% if form.errors %}
+<p style="color:red">Username and password did not match</p>
+{% endif %}
+
+</div>
+{% endblock %}
