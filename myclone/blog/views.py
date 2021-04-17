@@ -101,3 +101,6 @@ def comment_remove(request,pk):
 def user_logout(request):
     logout(request)
     return HttpResponseRedirect(reverse('post_list'))
+
+
+#hello
